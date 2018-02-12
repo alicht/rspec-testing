@@ -37,7 +37,7 @@ We could conceive of needing to write a method `current_age_for_birth_year` to a
 
 Our method will need to take in the user's birth year, subtract that from the current year, and return the user's age. 
 
-If the year is currently 2016 and I was born in 1984, when I call the method `current_age_for_birth_year` and provide it my birth year, 1984, by passing that year as an argument, `current_age_for_birth_year(1984)`, I expect it to return `32`. 
+If the year is currently 2018 and I was born in 1955, when I call the method `current_age_for_birth_year` and provide it my birth year, 1955, by passing that year as an argument, `current_age_for_birth_year(1984)`, I expect it to return `63`. 
 
 *Expressing that narrative in code is called a test!* 
 
@@ -46,7 +46,7 @@ If the year is currently 2016 and I was born in 1984, when I call the method `cu
 In an ideal world, I could code this requirement with something like:
 
 ```
-I expect the method current_age_for_birth_year(1984) to return 32
+I expect the method current_age_for_birth_year(1955) to return 63
 ```
 
 Unfortunately, we don't live in an ideal world. Fortunately, we have the RSpec Testing Framework.
