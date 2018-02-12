@@ -4,23 +4,19 @@
 
 1. Define the purpose of a code test.
 2. Read the RSpec tests.
-3. Run tests via the `learn` command.
 4. Understand test output.
 5. Write code to make test pass.
 
 ### What's a Test?
 
-Tests verify that the code you write behaves and produces the desired result. Many of the labs you will complete on Learn use tests. It can feel like an abstract concept at first, but it's worth starting to understand. Doing so will help you be more productive on Learn. Beyond that, understanding testing is important because **test-driven development**, or TDD, is considered the most reliable methodology for delivering quality code.
+Tests verify that the code you write behaves and produces the desired result. It can feel like an abstract concept at first, but it's worth starting to understand. Beyond that, understanding testing is important because **test-driven development**, or TDD, is considered the most reliable methodology for delivering quality code.
 
-#### What is TDD?
-
-Test-driven development is a big topic and you're not going to be writing your own tests for a while. It is an important concept though, so we'll touch on it briefly here. 
+#### What is TDD? 
 
 The basic idea behind TDD is that you should think about what you want your program to do and how you want your code to behave *before* you start coding. Especially as you begin to write more complex programs or develop applications, bringing this mindfulness to your development process will help you to write code that is robust (doesn't break all the time), flexible (accommodates future change and growth) and is easy for other developers to understand. 
 
 #### How Does TDD Work?
 
-Once again, you won't be writing your own tests for a while, so we'll only touch on this process briefly. Conceptually, TDD is simple:
 
 * First, write the test for a specific function of your code. 
 * *Then*, write the code to make the test pass. 
@@ -55,13 +51,12 @@ I expect the method current_age_for_birth_year(1984) to return 32
 
 Unfortunately, we don't live in an ideal world. Fortunately, we have the RSpec Testing Framework.
 
-The [RSpec Testing Framework](http://rspec.info/) is a ruby library designed to allow programmers to describe the behavior and outcomes of their programs in a very natural language similar to the above example. Lots of Ruby and Ruby on Rails labs on Learn include RSpec tests. 
+The [RSpec Testing Framework](http://rspec.info/) is a ruby library designed to allow programmers to describe the behavior and outcomes of their programs in a very natural language similar to the above example. 
 
 Let's learn a bit about RSpec.
 
 #### Understanding the Test in the `spec` Directory
 
-If you haven't already, fork this lab and clone it down onto your machine. 
 
 ** Remember, at this point all we want you to be able to do is understand testing at a high level. The idea is that labs come with expectations for how your code should behave and you write the code to make those tests pass. **
 
@@ -71,7 +66,6 @@ Let's take a peek inside:
 
 All of our tests are located within the `spec` directory. The code within the `spec` directory is already designed to test that your code works. For now, you rarely need to change any code within the `spec` directory.
 
-Our actual code, our programs, our solutions to the challenges in the lab, the stuff that makes our tests pass, are all coded outside of the `spec` directory, generally in the root of the lab directory or in files in directories like `lib` or `app`.
 
 In this lab, our tests are in:
 
@@ -179,9 +173,9 @@ So, once again, to run your tests, go into your terminal and type `learn` in thi
 
 #### Understanding Test Output
 
-When you run the tests with the `learn` command you're going to see the results of the test in your console. RSpec will report on what is working and what is broken and why. 
+When you run the tests you're going to see the results of the test in your console. RSpec will report on what is working and what is broken and why. 
 
-When you run this lab's test suite with `learn`, before writing any solution code in `current_age_for_birth_year.rb`, you'll see output similar to:
+When you run this lab's test suite, before writing any solution code in `current_age_for_birth_year.rb`, you'll see output similar to:
 
 ```bash
 current_age_for_birth_year method
