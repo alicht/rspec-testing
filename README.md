@@ -55,16 +55,7 @@ The [RSpec Testing Framework](http://rspec.info/) is a ruby library designed to 
 
 Let's learn a bit about RSpec.
 
-#### Understanding the Test in the `spec` Directory
-
-
-** Remember, at this point all we want you to be able to do is understand testing at a high level. The idea is that labs come with expectations for how your code should behave and you write the code to make those tests pass. **
-
-Let's take a peek inside:
-
-`spec/current_age_for_birth_year_spec.rb`
-
-All of our tests are located within the `spec` directory. The code within the `spec` directory is already designed to test that your code works. For now, you rarely need to change any code within the `spec` directory.
+#### Understanding the Test in the `spec`.rb
 
 
 In this example, our tests are in:
@@ -77,7 +68,7 @@ and our actual program and solution will be in:
 
 When we run our test program, `spec/current_age_for_birth_year_spec.rb`, that code will load the code in `current_age_for_birth_year.rb` and try to execute `current_age_for_birth_year(1955)` with the expectation that it returns `63`. If so, the test will pass. Anything else will make it fail.
 
-File: `spec/current_age_for_birth_year_spec.rb`
+File: `current_age_for_birth_year_spec.rb`
 
 ```ruby
 require_relative '../current_age_for_birth_year.rb'
@@ -127,7 +118,7 @@ After describing the subject of our test, the method `current_age_for_birth_year
 
 **Testing our method:**
 
-The next three lines are our actual test code and the most important part of the `spec/current_age_for_birth_year_spec.rb` file. It is within this block of code––between `it` and `end`––that we test the functionality of our method.
+The next three lines are our actual test code and the most important part of the `current_age_for_birth_year_spec.rb` file. It is within this block of code––between `it` and `end`––that we test the functionality of our method.
 
 In order to actually test our code, we need to use the method that this test relies on, that this test is designed to exercise. So the first real line of code in our test is: 
 
